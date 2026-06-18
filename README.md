@@ -1,17 +1,33 @@
-# React + Vite
+# 🎬 Sistema de Gerenciamento de Filmes Favoritos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação web desenvolvida em **React** para cadastrar, visualizar e pesquisar uma lista de filmes favoritos. 
 
-Currently, two official plugins are available:
+Este projeto foi construído como parte das atividades da disciplina de desenvolvimento na UTFPR, com o objetivo de demonstrar a aplicação prática de conceitos fundamentais do ecossistema React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Funcionalidades
 
-## React Compiler
+* **Cadastro de Filmes:** Adicione filmes informando Nome, Gênero, Ano e Nota.
+* **Listagem Dinâmica:** Exibição dos dados em cards interativos.
+* **Renderização Condicional:** * Filmes com nota ≥ 8 recebem o selo **⭐ Filme Recomendado**.
+  * Filmes com nota < 8 recebem o selo **📌 Filme Comum**.
+* **Filtro de Pesquisa:** Encontre filmes rapidamente através da barra de busca.
+* **Estatísticas:** Acompanhe o contador de filmes cadastrados em tempo real.
+* **Eventos Interativos:** Dê um duplo clique nos cards para favoritar o filme selecionado.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tecnologias e Conceitos Aplicados
 
-## Expanding the ESLint configuration
+O projeto foi inicializado utilizando o **Vite** para um ambiente de desenvolvimento rápido e moderno. Os principais conceitos abordados incluem:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# sistema-filmes
+* **React.js**
+* **CSS Modules:** Estilização componentizada e isolada, evitando conflitos de classes.
+* **Componentização:** Arquitetura dividida de forma lógica (`App`, `FormFilme`, `ListaFilmes`, `CardFilme`).
+* **Hooks (useState):** Gerenciamento reativo de variáveis e listas.
+* **State Lifting:** Centralização do estado principal no componente pai (`App`) para distribuição inteligente.
+* **Props:** Comunicação fluida para envio de dados e funções entre os componentes.
+* **Renderização de Listas:** Uso eficiente do método `.map()`.
+
+## 🛠️ Como Executar Localmente
+
+1. Clone este repositório no seu ambiente (ou baixe o arquivo .zip):
+```bash
+git clone [https://github.com/peluca2007/sistema-filmes.git](https://github.com/peluca2007/sistema-filmes.git)
